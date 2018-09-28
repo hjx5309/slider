@@ -95,7 +95,7 @@ Page({
         console.log(e)
        
          this.setData({
-           offsetStyle: `transition-duration: 0s;transform:translateX(${-this.data.windowWidth * offsetAll + Number(e.changedTouches[0].clientX) - Number(this.data.touch.x)}px) translateZ(0)`
+           offsetStyle: `transition-duration: 0s;transform:translateX(${-this.data.windowWidth * offsetAll + parseInt(e.changedTouches[0].clientX) - parseInt(this.data.touch.x)}px) translateZ(0)`
          })
       }
   },

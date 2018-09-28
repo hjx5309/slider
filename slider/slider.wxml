@@ -1,5 +1,5 @@
 <!--slider/slider.wxml-->
-<view class="m-slider" style='{{offsetStyle}}' catchtouchstart='touchStart' catchtouchend="touchEnd" >
+<view class="m-slider" style='{{offsetStyle}}' catchtouchstart='touchStart' catchtouchend="touchEnd" catchtouchmove='touchMove'>
     <view class='slider' style='left:{{slides[0]}}%;background:red;'>0</view>
     <view class='slider' style='left:{{slides[1]}}%;background:blue;'>1</view>
     <view class='slider' style='left:{{slides[2]}}%;background:yellow;'>2</view>
